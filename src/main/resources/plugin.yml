@@ -1,0 +1,25 @@
+name: AnSpec
+version: 1.0
+main: com.github.AnSpec
+api-version: 1.16
+description: Плагин для уведомления модераторов, когда игрока пенят читаки.
+author: anton4k272
+commands:
+  spec:
+    description: Уведомить модераторов о запросе спецификации.
+    usage: /spec
+    permission: anspec.use
+  specreload:
+    description: Перезагрузите конфигурацию плагина AnSpec.
+    usage: /specreload
+    permission: anspec.reload
+permissions:
+  anspec.use:
+    description: Позволяет игроку использовать команду /spec.
+    default: op
+  anspec.moderator:
+    description: Получает уведомления от команды /spec.
+    default: op
+  anspec.reload:
+    description: Позволяет перезагрузить конфигурацию плагина.
+    default: op
